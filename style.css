@@ -24,7 +24,7 @@ body{
     padding: 2in;
 }
 
-.header h1 {
+.header .h1 {
     font-family: Coiny;
     margin:0 auto;
 }
