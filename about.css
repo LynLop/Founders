@@ -1,0 +1,16 @@
+h2, p{
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+}
+
+.row{
+    padding: 1in 1in;
+}
+
+.sideimg{
+    width: 5in;
+    height: 5in;
+}

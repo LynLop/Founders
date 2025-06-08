@@ -1,0 +1,34 @@
+@import url(res/fonts/FontLibrary.css);
+body{
+    background-color: #ffc0ad;
+    font-family: Coiny;
+}
+
+.navbar-nav .nav-item {
+    padding-right: 0.2in;
+}
+
+.navbar-nav .nav-item .active {
+    background-color: #ffc3dc;
+    border-radius: 1in;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+    background-image: url(res/image/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 2in; */
+    padding: 2in;
+}
+
+.header h1 {
+    font-family: Coiny;
+    margin:0 auto;
+}
+
+.footer {
+    background-color: #ffc3dc;
+}

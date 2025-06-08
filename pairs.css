@@ -1,0 +1,129 @@
+body{
+  background-color: rgb(255, 248, 248);
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+p{
+  font-family: INRIA SANS;
+  color: rgb(51, 51, 51);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.tab{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(255, 192, 218);
+  height: 48px;
+  padding-left: 20px;
+  margin-bottom: 120px;
+}
+
+button{
+  background-color:rgb(255, 231, 241);
+  font-family: INRIA SANS;
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 6px 14px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: opacity 0.15s;
+}
+
+button:hover{
+  background-color:rgb(251, 183, 213);
+  opacity: 0.7;
+}
+
+h2{
+  font-family: COINY;
+  color: rgb(51, 51, 51);
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card{
+  background-color: rgb(255, 231, 241);
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 380px;
+  min-width: 320px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+}
+.pairs-image{
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+
+.image-row{
+  padding-left: 56px;
+  padding-right: 60px;
+}
+
+h3{
+  font-family: INRIA SANS;
+  color: rgb(51, 51, 51);
+  margin-top: 0;
+  margin-bottom: 6px;
+} 
+
+.pairs-info-container{
+  background-color: rgb(250, 212, 223);
+  border: none;
+  border-radius: 0 0 20px 20px;
+  height: 108px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+}
+
+.info-grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.description{
+  font-size: 17px;
+  text-align: justify;
+  line-height: 24px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 45px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 750px){ 
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}

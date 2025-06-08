@@ -1,0 +1,101 @@
+
+body {
+  background-color: #e8e3bb;
+  color: #2d2424;
+}
+      h1, h2, h4 {
+        font-weight: 700;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+      }
+      .faq-list {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 0;
+        list-style: none;
+      }
+      .faq-list li {
+        background: #f9fafb;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+        margin-bottom: 1rem;
+        padding: 1rem;
+      }
+
+.faq-question {
+  all: unset;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.25rem 0;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover,
+.faq-question:focus {
+  color: #2563eb;
+  background-color: #f9fafb;
+  outline: none;
+}
+.faq-answer {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: none;
+}
+
+.faq-answer p {
+  margin-bottom: 20px;
+}
+
+.faq-list li {
+  margin-bottom: 20px;
+}
+
+
+
+      .faq-answer {
+        display: none;
+        margin-top: 0.5rem;
+        color: #6b7280; /* neutral gray */
+        font-size: 1rem;
+        line-height: 1.5rem;
+        transition: max-height 0.3s ease;
+      }
+      /* Show answer */
+      .faq-answer.show {
+        display: block;
+      }
+
+      .contact-us {
+        background-color: #e35a82;
+        width: 300px;
+        height: 60px;
+        text-align: center;
+        margin: auto auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .contact-us:hover {
+        background-color: #b04564;
+      }

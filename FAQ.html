@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Founders</title>
+    <link rel="shortcut icon" href="res/image/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="res/library/Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="res/library/fontawesomeweb/css/all.min.css" />
+</head>
+<body>
+  <div id="navbar">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="res/image/logo.jpg" alt="Founders" style="width:70px" class="rounded-pill" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="Menu.html">MENU</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link active" href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="header">
+    <h1>"POPULAR POPULAR POPULAR"</h1>
+    <h4>Doughnuts are usually&nbsp;deep fried from a flour dough, </h4>
+  </div>
+
+  <h1>Frequently Asked Questions</h1>
+  <ul class="faq-list">
+    <li>
+      <button class="faq-question" aria-expanded="false" aria-controls="faq1">Pick top 4</button>
+      <div class="faq-answer" id="faq1" role="region" aria-hidden="true">
+        <p>coffee almonds, avo donut, biscoff tiramisu, and nutty nutella</p>
+      </div>
+    </li>
+    <li>
+      <button class="faq-question" aria-expanded="false" aria-controls="faq2">What are the top selling in the variety of donut and coffees?</button>
+      <div class="faq-answer" id="faq2" role="region" aria-hidden="true">
+        <p>The top selling in a variety of donut and a coffee is Biscoff tiramisu, Tres Leches Latte and Dark Lava</p>
+      </div>
+    </li>
+    <li>
+      <button class="faq-question" aria-expanded="false" aria-controls="faq3">Are you accepting orders in holiday or weekends?</button>
+      <div class="faq-answer" id="faq3" role="region" aria-hidden="true">
+        <p>Yes, we are accepting orders on weekends but on holidays, it depends on what holiday it is</p>
+      </div>
+    </li>
+    <li>
+      <button class="faq-question" aria-expanded="false" aria-controls="faq4">Open and close time (business hours)?</button>
+      <div class="faq-answer" id="faq4" role="region" aria-hidden="true">
+        <p>We are open on 9am to 8pm</p>
+      </div>
+    </li>
+    <li>
+      <button class="faq-question" aria-expanded="false" aria-controls="faq5">What forms of payments do you have?</button>
+      <div class="faq-answer" id="faq5" role="region" aria-hidden="true">
+        <p>We have these forms, Cash, Gcash Payment, and Card Payment. We also have Foodpanda and Grab.</p>
+      </div>
+    </li>
+    <li>
+      <button class="faq-question" aria-expanded="false" aria-controls="faq6">Available gift cards and loyalty cards?</button>
+      <div class="faq-answer" id="faq6" role="region" aria-hidden="true">
+        <p>Unfortunately, we don’t give gift cards and loyalty cards</p>
+      </div>
+    </li>
+    <li>
+      <button class="faq-question" aria-expanded="false" aria-controls="faq7">Are you open for deliver?</button>
+      <div class="faq-answer" id="faq7" role="region" aria-hidden="true">
+        <p>Yes, we are open on Foodpanda, Grab, and Pickup ph</p>
+      </div>
+    </li>
+  </ul>
+
+  <h2>Didn't find your answer?</h2>
+  <a href="Contact.html"><button class="contact-us">Contact Us</button></a>
+
+  <script>
+    // Updated script to allow only one FAQ open at a time
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach((question) => {
+      question.addEventListener('click', () => {
+        // Close all answers and set aria expanded and hidden appropriately
+        faqQuestions.forEach((q) => {
+          const ans = q.nextElementSibling;
+          if (q !== question) {
+            ans.classList.remove('show');
+            q.setAttribute('aria-expanded', 'false');
+            ans.setAttribute('aria-hidden', 'true');
+          }
+        });
+        // Toggle current clicked question
+        const answer = question.nextElementSibling;
+        const isOpen = answer.classList.contains('show');
+        if (isOpen) {
+          answer.classList.remove('show');
+          question.setAttribute('aria-expanded', 'false');
+          answer.setAttribute('aria-hidden', 'true');
+        } else {
+          answer.classList.add('show');
+          question.setAttribute('aria-expanded', 'true');
+          answer.setAttribute('aria-hidden', 'false');
+        }
+      });
+    });
+  </script>
+
+  <script src="res/library/Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
